@@ -6,11 +6,11 @@ import sys
 import tempfile
 from .core import synthesize, verify
 
-def main(generator=synthesize,verifier=verify,description='Bounded finite bit-vector program synthesis and independent certificate verification'):
+def main(generator=synthesize,verifier=verify,description='Bounded finite bit-vector program synthesis and independent certificate verification',verify_cap=8*1024*1024):
     p=argparse.ArgumentParser(description=description)
     p.add_argument('input');p.add_argument('--verify',action='store_true');p.add_argument('--output');a=p.parse_args()
     try:
-        cap=8*1024*1024 if a.verify else 65536
+        cap=verify_cap if a.verify else 65536
         with open(a.input,'rb') if a.input!='-' else __import__('contextlib').nullcontext(sys.stdin.buffer) as source:
             raw=source.read(cap+1)
         if len(raw)>cap:raise ValueError('input exceeds size limit')

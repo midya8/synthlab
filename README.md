@@ -47,3 +47,9 @@ synthlab-teaching request.json --output teaching.json
 ```
 
 Fifteen combined native tests pass on Python3.10-3.13. Seven combined Node/actual-Chrome checks preserve the base and add15 teaching reports,1,203 subset selections and597 rival selections at320/390/1280. Installed outside-checkout reproduction covers both certificate families. The atlas checks every subset in its explicit finite domain; no class-wide teaching-dimension or generalization claim.
+
+## Exact adaptive identification
+
+The adaptive atlas finds the exact worst-case number of further input queries needed to identify any function still fitting the initial observations. It audits every nonempty version space, every label partition, all minimax ties, the best and worst balanced-heuristic tie resolutions, an exact passive baseline and every canonical target path. No arbitrary easy hypothesis subset is selected. A full seeded grammar control needs two further adaptive queries versus three fixed passive rows.
+
+See [the adaptive contract](ADAPTIVE.md) and `docs/adaptive.html`. Reproduce with `python -m synthlab.adaptive_cli request.json --output policy.json`, then verify with `python -m synthlab.adaptive_cli policy.json --verify`. Existing synthesis and teaching formats remain unchanged.
