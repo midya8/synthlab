@@ -1,0 +1,131 @@
+[
+  {
+    "name": "Correct constant, zero examples, seven rivals",
+    "input": {
+      "bits": 1,
+      "operators": [
+        "and",
+        "xor"
+      ],
+      "max_cost": 3,
+      "target": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "seeds": []
+    }
+  },
+  {
+    "name": "Boolean XOR, four tied minimum teaching sets",
+    "input": {
+      "bits": 1,
+      "operators": [
+        "xor"
+      ],
+      "max_cost": 3,
+      "target": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "seeds": [
+        0
+      ]
+    }
+  },
+  {
+    "name": "All Boolean seeds already retained",
+    "input": {
+      "bits": 1,
+      "operators": [
+        "and",
+        "xor"
+      ],
+      "max_cost": 3,
+      "target": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "name": "Two-bit XOR: verified but still three rivals",
+    "input": {
+      "bits": 2,
+      "operators": [
+        "add",
+        "and",
+        "neg",
+        "not",
+        "xor"
+      ],
+      "max_cost": 5,
+      "target": [
+        0,
+        1,
+        2,
+        3,
+        1,
+        0,
+        3,
+        2,
+        2,
+        3,
+        0,
+        1,
+        3,
+        2,
+        1,
+        0
+      ],
+      "seeds": [
+        0
+      ]
+    }
+  },
+  {
+    "name": "Two-bit addition and forced seeds",
+    "input": {
+      "bits": 2,
+      "operators": [
+        "add",
+        "and"
+      ],
+      "max_cost": 5,
+      "target": [
+        0,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        0,
+        2,
+        3,
+        0,
+        1,
+        3,
+        0,
+        1,
+        2
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ]
+    }
+  }
+]

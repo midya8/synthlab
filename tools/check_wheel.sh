@@ -8,3 +8,4 @@ python -m venv "$tmp/env"
 "$tmp/env/bin/pip" install --no-deps "$tmp"/wheels/*.whl
 cd "$tmp"
 "$tmp/env/bin/python" "$root/tools/verify_installed.py" "$root/docs/controls.json" "$tmp/env/bin/synthlab"
+"$tmp/env/bin/python" "$root/tools/verify_teaching_installed.py" "$root/docs/teaching-controls.json" "$tmp/env/bin/synthlab-teaching"
