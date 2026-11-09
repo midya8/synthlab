@@ -11,6 +11,7 @@ license = {text = "MIT"}
 
 [project.scripts]
 synthlab = "synthlab.__main__:main"
+synthlab-teaching = "synthlab.teaching_cli:main"
 
 [tool.setuptools.packages.find]
 include = ["synthlab*"]
