@@ -1,0 +1,144 @@
+[
+  {
+    "name": "Boolean class, no initial observations",
+    "input": {
+      "bits": 1,
+      "operators": [
+        "and",
+        "xor"
+      ],
+      "max_cost": 3,
+      "target": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "seeds": []
+    }
+  },
+  {
+    "name": "Four word-valued functions, one multiway query",
+    "input": {
+      "bits": 2,
+      "operators": [],
+      "max_cost": 1,
+      "target": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "seeds": []
+    }
+  },
+  {
+    "name": "Adaptivity gap: two remaining queries versus three passive",
+    "input": {
+      "bits": 2,
+      "operators": [
+        "add",
+        "and",
+        "neg",
+        "not",
+        "xor"
+      ],
+      "max_cost": 5,
+      "target": [
+        3,
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2
+      ],
+      "seeds": [
+        7,
+        12
+      ]
+    }
+  },
+  {
+    "name": "Already identified by initial observations",
+    "input": {
+      "bits": 2,
+      "operators": [
+        "add",
+        "and",
+        "neg",
+        "not",
+        "xor"
+      ],
+      "max_cost": 5,
+      "target": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "seeds": [
+        0,
+        2,
+        7,
+        11
+      ]
+    }
+  },
+  {
+    "name": "Boolean XOR after one observation",
+    "input": {
+      "bits": 1,
+      "operators": [
+        "add",
+        "and",
+        "neg",
+        "not",
+        "xor"
+      ],
+      "max_cost": 3,
+      "target": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "seeds": [
+        0
+      ]
+    }
+  }
+]
